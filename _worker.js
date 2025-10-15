@@ -4344,7 +4344,7 @@ async function bestIP(request, env, txt = 'ADD.txt') {
         }
         
         async function testIP(ip, port) {
-            const timeout = 5000; // 增加超时时间到5秒
+            const timeout = 1000; // 增加超时时间到1秒
             
             // 解析IP格式
             const parsedIP = parseIPFormat(ip, port);
@@ -6910,7 +6910,7 @@ function config_Html(token = "test", proxyhost = "") {
                         headers: {
                             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
                         },
-                        timeout: 5000 // 5秒超时
+                        timeout: 1000 // 1秒超时
                     });
                     
                     if (response.ok && response.status === 200) {
@@ -7175,4 +7175,5 @@ function config_Html(token = "test", proxyhost = "") {
 </html>`;
 
     return html;
+
 }
